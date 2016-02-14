@@ -1,0 +1,46 @@
+﻿Build started 11/30/2015 12:24:21 AM.
+     1>Project "C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\SpaceShip\SpaceShip.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\glm" /I"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\glew-1.13.0\include" /I"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\freeglut\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AlienShip.cpp AlienShipManager.cpp Asteroid.cpp AsteroidManager.cpp Bullet.cpp BulletManager.cpp PlayerShip.cpp opengl.cpp
+         AlienShip.cpp
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\playership.h(29): warning C4244: 'initializing' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(13): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(14): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(15): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(19): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(20): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(21): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(24): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(82): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(177): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(178): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(179): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(183): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(184): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(185): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(188): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\yuang\documents\visual studio 2013\projects\spaceship\spaceship\alienship.cpp(247): warning C4305: '+=' : truncation from 'double' to 'float'
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         opengl.cpp
+         PlayerShip.cpp
+         BulletManager.cpp
+         Bullet.cpp
+         AsteroidManager.cpp
+         Asteroid.cpp
+         AlienShipManager.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\Debug\SpaceShip.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\freeglut\lib" /LIBPATH:"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\glew-1.13.0\include" /LIBPATH:"C:\Users\Yuang\Documents\Visual Studio 2013\Projects\SpaceShip\Dependencies\glew-1.13.0\lib\Release\Win32" opengl32.lib freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\Debug\SpaceShip.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\Debug\SpaceShip.lib" /MACHINE:X86 Debug\AlienShip.obj
+         Debug\AlienShipManager.obj
+         Debug\Asteroid.obj
+         Debug\AsteroidManager.obj
+         Debug\Bullet.obj
+         Debug\BulletManager.obj
+         Debug\opengl.obj
+         Debug\PlayerShip.obj
+         SpaceShip.vcxproj -> C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\Debug\SpaceShip.exe
+     1>Done Building Project "C:\Users\Yuang\documents\visual studio 2013\Projects\SpaceShip\SpaceShip\SpaceShip.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.57
