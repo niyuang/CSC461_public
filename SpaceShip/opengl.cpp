@@ -279,7 +279,7 @@ void init(void)
 	bool large_alien_ship_res = load_obj("Data/large_alienShip.obj", _large_alienship_vertices, _large_alienship_uvs, _large_alienship_normals);
 
 	asteroidManager = new AsteroidManager(_small_asteroid_vertices, _small_asteroid_uvs, _small_asteroid_normals, _medium_asteroid_vertices, _medium_asteroid_uvs, _medium_asteroid_normals, _large_asteroid_vertices, _large_asteroid_uvs, _large_asteroid_normals);
-    alienShipManager = new AlienShipManager(_small_alienship_vertices, _small_alienship_uvs, _small_alienship_normals, _large_alienship_vertices, _large_alienship_uvs, _large_alienship_normals);
+	alienShipManager = new AlienShipManager(_small_alienship_vertices, _small_alienship_uvs, _small_alienship_normals, _large_alienship_vertices, _large_alienship_uvs, _large_alienship_normals);
 }
 
 void timer(int value) {
@@ -364,11 +364,11 @@ void display_menu(void)
 void specialInput_menu(int key, int x, int y) {
 	switch (key)
 	{
-	case GLUT_KEY_UP:
+		case GLUT_KEY_UP:
 		menu = _new_game;
 		printf("up");
 		break;
-	case GLUT_KEY_DOWN:
+		case GLUT_KEY_DOWN:
 		menu = _exit_game;
 		printf("down");
 		break;
@@ -429,10 +429,10 @@ void display_obj(void)
 void specialInput_game(int key, int x, int y) {
 	switch (key)
 	{
-	case GLUT_KEY_LEFT:
+		case GLUT_KEY_LEFT:
 		playerShip->incrementDirection();
 		break;
-	case GLUT_KEY_RIGHT:
+		case GLUT_KEY_RIGHT:
 		playerShip->decrementDirection();
 		break;
 	}
@@ -441,17 +441,17 @@ void specialInput_game(int key, int x, int y) {
 void input_game(unsigned char key, int x, int y) {
 	switch (key)
 	{
-	case 'x':
+		case 'x':
 		playerShip->incrementSpeed();
 		playerShip->setDirection(playerShip->direction);
 		break;
-	case 'z':
+		case 'z':
 		bulletManager->fireBullet();
 		break;
-	case 'l' :
+		case 'l' :
 		alienShipManager->addLargeAlienShip();
 		break;
-	case 's':
+		case 's':
 		alienShipManager->addAlienShip();
 		break;
 	}

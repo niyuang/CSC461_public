@@ -67,10 +67,8 @@ public:
 	void incrementSpeed();
 	void displayPlayerShip();
 	
-	// -------------
 	void setDirection(float v);
 
-	// -------------
 	void updatePlayerShip(AsteroidManager *asteroidManager, AlienShipManager *alienshipManager, BulletManager *bulletManager);
 	void updateBullet();
 	void reset();

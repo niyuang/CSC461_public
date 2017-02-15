@@ -51,20 +51,20 @@ void Bullet::update() {
 	if (XLocation < -50.0 || XLocation > 50.0 ||
 		YLocation < -50.0 || YLocation > 50.0) {
 		dieOut = true;
-	}
+}
 
-	XLocation += cos(fabs(direction + 90) * 3.1415926 / 180.0) * (speed + 0.0025);
-	YLocation += sin(fabs(direction + 90) * 3.1415926 / 180.0) * (speed + 0.0025);
+XLocation += cos(fabs(direction + 90) * 3.1415926 / 180.0) * (speed + 0.0025);
+YLocation += sin(fabs(direction + 90) * 3.1415926 / 180.0) * (speed + 0.0025);
 }
 
 void AlienBullet::update() {
 	if (XLocation < -50.0 || XLocation > 50.0 ||
 		YLocation < -50.0 || YLocation > 50.0) {
 		dieOut = true;
-	}
+}
 
-	XLocation += XSpeed;
-	YLocation += YSpeed;
+XLocation += XSpeed;
+YLocation += YSpeed;
 }
 
 void Bullet::display() {

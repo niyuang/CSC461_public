@@ -7,17 +7,17 @@ float XSplit;
 float YSplit;
 
 AsteroidManager::AsteroidManager(
-std::vector<glm::vec3> _small_asteroid_vertices,
-std::vector<glm::vec2> _small_asteroid_uvs,
-std::vector<glm::vec3> _small_asteroid_normals,
+	std::vector<glm::vec3> _small_asteroid_vertices,
+	std::vector<glm::vec2> _small_asteroid_uvs,
+	std::vector<glm::vec3> _small_asteroid_normals,
 
-std::vector<glm::vec3> _medium_asteroid_vertices,
-std::vector<glm::vec2> _medium_asteroid_uvs,
-std::vector<glm::vec3> _medium_asteroid_normals,
+	std::vector<glm::vec3> _medium_asteroid_vertices,
+	std::vector<glm::vec2> _medium_asteroid_uvs,
+	std::vector<glm::vec3> _medium_asteroid_normals,
 
-std::vector<glm::vec3> _large_asteroid_vertices,
-std::vector<glm::vec2> _large_asteroid_uvs,
-std::vector<glm::vec3> _large_asteroid_normals) {
+	std::vector<glm::vec3> _large_asteroid_vertices,
+	std::vector<glm::vec2> _large_asteroid_uvs,
+	std::vector<glm::vec3> _large_asteroid_normals) {
 
 	this->_small_asteroid_normals = _small_asteroid_normals;
 	this->_small_asteroid_uvs = _small_asteroid_uvs;
@@ -57,12 +57,12 @@ void AsteroidManager::updateAsteroids(BulletManager *bulletManager)
 
 	std::vector<Asteroid *>::iterator it = asteroidList.begin();
 	while (it != asteroidList.end()) {
-			if ((*it)->active == false && (*it)->explosionEnded == true) {
-				it = asteroidList.erase(it);
-			}
-			else {
-				++it;
-			}
+		if ((*it)->active == false && (*it)->explosionEnded == true) {
+			it = asteroidList.erase(it);
+		}
+		else {
+			++it;
+		}
 	}
 
 	std::vector<Asteroid *>::iterator split_it = asteroidList.begin();
@@ -74,14 +74,14 @@ void AsteroidManager::updateAsteroids(BulletManager *bulletManager)
 			explosion = true;
 
 			if (dynamic_cast<mediumAsteroid*>(*split_it)) {
-					split_it = asteroidList.erase(split_it);
-					generateTwoSmallAsteroid = true;
+				split_it = asteroidList.erase(split_it);
+				generateTwoSmallAsteroid = true;
 			}
 			else if (dynamic_cast<largeAsteroid*>(*split_it)) {
 				split_it = asteroidList.erase(split_it);
 				generateTwoMediumAsteroid = true;
 			}
-		 
+			
 		}
 		else {
 			++split_it;

@@ -49,10 +49,10 @@ void AlienShipManager::updateAlienShips(BulletManager *bulletmanager, AsteroidMa
 			|| (*out_of_screen)->YLocation < -50.0
 			|| (*out_of_screen)->YLocation > 50.0) {
 			out_of_screen = alienshipList.erase(out_of_screen);
-		} else {
-			++out_of_screen;
-		}
+	} else {
+		++out_of_screen;
 	}
+}
 
 }
 
